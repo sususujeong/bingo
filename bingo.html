@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신나고 즐거운 빙고게임</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box check">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p>망고</p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+        <div class="box">
+            <p></p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box{
+        width: 140px;
+        height: 140px;
+        background-color: rgb(224, 167, 209);
+        margin: 4px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+
+        transition: all 0.1s ease;
+        border-radius: 15px;
+        
+    }
+
+    .box:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 8px rgb(198, 128, 228);
+        border-radius: 15px;
+
+    }
+    .container{
+        width: 740px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box.check{
+        background-color: rgb(241, 118, 172);
+    }
+</style>
+
+<script>
+    //html의 / box클래스를 / 클릭했을 떄 
+    document.querySelector('.container').addEventListener('click', function(e){
+        //html의 / box클래스에 / 클래스 목록에 / check클래스를 toggle 한다
+        e.target.classList.toggle('check');
+    });
+</script>
